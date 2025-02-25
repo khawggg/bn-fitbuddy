@@ -26,7 +26,7 @@ module.exports = app;  // ให้ Vercel ใช้งาน API ได้
 
 const db = mysql.createConnection({
     host: process.env.DB_HOST || 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
-    user: process.env.DB_USER || '4KhA7MfZkdHo6df.roott',
+    user: process.env.DB_USER || '4KhA7MfZkdHo6df.root',
     password: process.env.DB_PASS || 'QZxt5AxGwZsfXCGA',
     database: process.env.DB_NAME || 'fit_buddy',
     ssl: { rejectUnauthorized: true }  // รองรับ TiDB Cloud SSL
